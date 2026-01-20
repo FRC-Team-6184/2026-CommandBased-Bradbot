@@ -3,7 +3,10 @@
 This is just a series of notes written by William H. trying to learn how to get a command based robot working.
 These notes are going to be totally informal and probably unorganized.
 
-As opposed to a periodic structure, the command based structure relies on commands. Commands can be a bunch of things, but you can still have them function identically to a periodic if desired, but it has the flexibility 
+As opposed to a periodic structure, the command based structure relies on commands. Commands can be a bunch of things, but you can still have them function identically to a periodic framework if desired, but it has the flexibility to do things much more dynamically than a periodic framework (at least, it can do it much easier than a periodic can).
+
+## CommandScheduler
+All commands and subsystems should end up going into the **CommandScheduler**. The **CommandScheduler** is what actually ends up running the code and commands within your robot's codebase. Anything that isn't handed over to the **CommandScheduler** *will not be run*.
 
 ## Command Types
 There is two main ways to create a Command
